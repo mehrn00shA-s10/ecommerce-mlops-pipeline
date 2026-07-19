@@ -28,30 +28,32 @@ ecommerce/
 ## Local Setup (Without Docker)
 
 1. **Install Dependencies:**
+ ```bash
    pip install -r requirements.txt
-
-2. **Run the FastAPI Server:**
-
+```
+3. **Run the FastAPI Server:**
+  ```bash 
    uvicorn api:app --reload
-
-3. **Access Interactive Documentation:**
+```
+4. **Access Interactive Documentation:**
    Open your browser and navigate to `http://127.0.0.1:8000/docs` to interactively test the API models.
 
 ## Container Deployment (With Docker)
 
 To build and run the application inside an isolated Docker container:
 
-
+```bash
 # Build the Docker image
 docker build -t ecommerce-ml-api .
 
 # Run the containerized service
 docker run -d -p 8000:8000 ecommerce-ml-api
-
+```
 
 ## API Specification
 
 ### Post Prediction via Model A
+```bash
 - **Endpoint:** `/predict/model_a`
 - **Method:** `POST`
 - **Payload Example:**
@@ -71,4 +73,4 @@ docker run -d -p 8000:8000 ecommerce-ml-api
     "will_purchase": 1,
     "purchase_probability": 0.85
   }
-  
+  ```
