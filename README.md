@@ -11,7 +11,7 @@ Raw Session Data -> Feature Engineering -> Model Training & Selection (.pkl) -> 
 ecommerce/
 ├── models/
 │   ├── model_a.pkl          # Trained Logistic Regression Model A
-│   └── model_b.pkl          # Trained Baseline/Alternative Model B
+│   └── model_b.pkl          # Trained Random Forest Model B
 ├── feature_engineering.py
 ├── api.py                   # FastAPI Application for Real-Time Inference
 ├── requirements.txt         # Python Dependencies
