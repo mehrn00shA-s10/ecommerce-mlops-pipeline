@@ -59,11 +59,11 @@ docker run -d -p 8000:8000 ecommerce-ml-api
 - **Payload Example:**
   json
   {
-    "view_count": 30,
+    "view_count": 10,
     "cart_count": 2,
     "unique_products": 1,
     "avg_price": 60,
-    "session_duration": 3000
+    "session_duration": 300
   }
   
 - **Response Example:**
@@ -71,6 +71,6 @@ docker run -d -p 8000:8000 ecommerce-ml-api
   {
     "model_used": "Logistic_Regression_A",
     "will_purchase": 1,
-    "purchase_probability": 0.85
+    "purchase_probability": 0.8546685140001831
   }
   ```
